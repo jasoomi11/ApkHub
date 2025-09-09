@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APK Hub - Page 2</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111">
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Download free APKs - safe and fast.">
+  <meta property="og:title" content="APK Hub">
+  <meta property="og:description" content="Download free APKs - safe and fast.">
+  <meta property="og:type" content="website">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #fff;
+    }
+    .navbar-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Side Menu */
+    .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #1c1c1c;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 200;
+    }
+    .side-menu a {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #fff;
+      display: block;
+      transition: 0.2s;
+    }
+    .side-menu a:hover {
+      background: #333;
+    }
+    .side-menu .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Filter Bar */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 20px;
+    }
+    .filters button {
+      background: #ffcc00;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    /* APK Cards */
+    .card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 12px;
+      position: relative;
+      text-align: center;
+    }
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+    .card p {
+      font-size: 12px;
+      color: #bbb;
+      margin: 0;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 5px 10px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Pagination */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 20px;
+    }
+    .pagination a {
+      padding: 6px 12px;
+      background: #1c1c1c;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .pagination a.active {
+      background: #ffcc00;
+      color: #000;
+    }
+    .pagination a:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Menu -->
+  <div id="sideMenu" class="side-menu">
+    <span class="close-btn" onclick="closeMenu()">×</span>
+    <a href="#">Categories</a>
+    <a href="#">Most Popular</a>
+    <a href="#">Newest</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>APK Hub</h1>
+    <div class="navbar-icons">
+      <span>🔍</span>
+      <span onclick="openMenu()">☰</span>
+    </div>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="filters">
+    <button>Most Popular</button>
+    <button>Newest</button>
+    <button>Last Update</button>
+    <button>Top Rated</button>
+    <button>A-Z</button>
+  </div>
+
+  <!-- APK Grid with Demo Games -->
+  <div class="grid">
+    <!-- Same placeholder cards as page1, you can replace with new games later -->
+    <div class="card"><span class="badge">POPULAR</span><img src="games/demo1.png" alt="Demo"><h3>Game Demo 1</h3><p>Category</p><p>v1.0.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">POPULAR</span><img src="games/demo1.png" alt="Demo"><h3>Game Demo 1</h3><p>Category</p><p>v1.0.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">NEW</span><img src="games/demo2.png" alt="Demo"><h3>Game Demo 2</h3><p>Category</p><p>v1.0.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">HOT</span><img src="games/demo3.png" alt="Demo"><h3>Game Demo 3</h3><p>Category</p><p>v1.0.0</p><button class="download-btn">Download</button></div>
+    <!-- Add more if needed -->
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <a href="index.html">1</a>
+    <a href="#" class="active">2</a>
+    <a href="page3.html">3</a>
+    <a href="page4.html">4</a>
+    <a href="page3.html">Next »</a>
+  </div>
+
+  <script>
+    function openMenu() {
+      document.getElementById("sideMenu").style.width = "240px";
+    }
+    function closeMenu() {
+      document.getElementById("sideMenu").style.width = "0";
+    }
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APK Hub</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111">  <!-- SEO Meta Tags -->  <meta name="description" content="Download free APKs - safe and fast.">
+  <meta property="og:title" content="APK Hub">
+  <meta property="og:description" content="Download free APKs - safe and fast.">
+  <meta property="og:type" content="website">  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #000;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #fff;
+    }
+    .navbar-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Side Menu */
+    .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #1c1c1c;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 200;
+    }
+    .side-menu a {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #fff;
+      display: block;
+      transition: 0.2s;
+    }
+    .side-menu a:hover {
+      background: #333;
+    }
+    .side-menu .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Filter Bar */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 20px;
+    }
+    .filters button {
+      background: #ffcc00;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Grid Layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    /* APK Cards */
+    .card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 12px;
+      position: relative;
+      text-align: center;
+    }
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+    .card p {
+      font-size: 12px;
+      color: #bbb;
+      margin: 0;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 5px 10px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Pagination */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 20px;
+    }
+    .pagination a {
+      padding: 6px 12px;
+      background: #1c1c1c;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .pagination a.active {
+      background: #ffcc00;
+      color: #000;
+    }
+    .pagination a:hover {
+      background: #333;
+    }
+  </style></head>
+<body>  <!-- Side Menu -->  <div id="sideMenu" class="side-menu">
+    <span class="close-btn" onclick="closeMenu()">×</span>
+    <a href="#">Categories</a>
+    <a href="#">Most Popular</a>
+    <a href="#">Newest</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>  <!-- Navbar -->  <div class="navbar">
+    <h1>APK Hub</h1>
+    <div class="navbar-icons">
+      <span>🔍</span>
+      <span onclick="openMenu()">☰</span>
+    </div>
+  </div>  <!-- Filter Bar -->  <div class="filters">
+    <button>Most Popular</button>
+  </div>  <!-- APK Grid with Demo Games -->  <div class="grid">
+    <div class="card"><span class="badge">POPULAR</span><img src="games/pubg.png" alt="PUBG"><h3>PUBG Mobile</h3><p>Action</p><p>v3.2.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge" style="background:orange;">FULL</span><img src="games/freefire.png" alt="Free Fire"><h3>Free Fire</h3><p>Action</p><p>v1.105.1</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">PREMIUM</span><img src="games/subway.png" alt="Subway Surfers"><h3>Subway Surfers</h3><p>Arcade</p><p>v3.0.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">NEW</span><img src="games/coc.png" alt="Clash of Clans"><h3>Clash of Clans</h3><p>Strategy</p><p>v16.200.9</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">POPULAR</span><img src="games/candy.png" alt="Candy Crush"><h3>Candy Crush Saga</h3><p>Puzzle</p><p>v1.272.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">HOT</span><img src="games/gta.png" alt="GTA SA"><h3>GTA: San Andreas</h3><p>Action</p><p>v2.10</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">PREMIUM</span><img src="games/minecraft.png" alt="Minecraft"><h3>Minecraft</h3><p>Adventure</p><p>v1.21.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">TOP</span><img src="games/asphalt.png" alt="Asphalt 9"><h3>Asphalt 9</h3><p>Racing</p><p>v4.3.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">PREMIUM</span><img src="games/ludo.png" alt="Ludo King"><h3>Ludo King</h3><p>Board</p><p>v9.1.0</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">POPULAR</span><img src="games/fifa.png" alt="FIFA Mobile"><h3>FIFA Mobile</h3><p>Sports</p><p>v20.0.03</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">NEW</span><img src="games/temple.png" alt="Temple Run"><h3>Temple Run</h3><p>Arcade</p><p>v2.21.3</p><button class="download-btn">Download</button></div>
+    <div class="card"><span class="badge">HOT</span><img src="games/brawl.png" alt="Brawl Stars"><h3>Brawl Stars</h3><p>Action</p><p>v55.198</p><button class="download-btn">Download</button></div>
+    <script>
+    function openMenu() {
+      document.getElementById("sideMenu").style.width = "240px";
+    }
+    function closeMenu() {
+      document.getElementById("sideMenu").style.width = "0";
+    }
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script></body>
+</html>
