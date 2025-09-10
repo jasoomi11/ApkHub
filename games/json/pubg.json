@@ -1,0 +1,22 @@
+{
+  "name": "PUBG Mobile",
+  "version": "v3.2.0",
+  "size": "1.9 GB",
+  "publisher": "Tencent Games",
+  "updated": "September 2025",
+  "icon": "games/pubg.png",
+  "screenshot": "games/screenshots/pubg.jpg",
+  "download": "https://example.com/pubg.apk",
+  "description": "PUBG Mobile is a battle royale game where 100 players parachute onto an island and fight to be the last one standing.",
+  "whatsNew": [
+    "New futuristic map added",
+    "Improved anti-cheat system",
+    "New weapons and skins",
+    "Performance optimizations"
+  ],
+  "similarGames": [
+    { "name": "Free Fire", "version": "v1.105.1" },
+    { "name": "Call of Duty Mobile", "version": "v1.7.30" },
+    { "name": "Fortnite Mobile", "version": "v28.3" }
+  ]
+}

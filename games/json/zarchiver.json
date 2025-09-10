@@ -1,0 +1,31 @@
+{
+  "name": "ZArchiver",
+  "version": "1.0.9",
+  "size": "5.3 MB",
+  "publisher": "ZDevs",
+  "updated": "August 25, 2025",
+  "icon": "games/zarchiver.png",
+  "screenshot": "games/screenshots/zarchiver.jpg",
+  "download": "https://github.com/jasoomi11/ApkHub-games/releases/download/Z/zarchiver-1-0-10.apk",
+  
+  "description": "ZArchiver is a powerful archive manager for Android that lets you create, decompress, and manage different archive file formats including ZIP, RAR, 7Z, and more.",
+  "whatsNew": [
+    "Improved 7z support",
+    "Bug fixes and performance improvements",
+    "Enhanced security for archive passwords"
+  ],
+  "similarGames": [
+    {
+      "name": "RAR",
+      "version": "6.20"
+    },
+    {
+      "name": "WinZip",
+      "version": "7.1"
+    },
+    {
+      "name": "B1 Archiver",
+      "version": "1.2.9"
+    }
+  ]
+}

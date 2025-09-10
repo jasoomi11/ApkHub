@@ -1,0 +1,26 @@
+{
+  "name": "App Name",
+  "version": "1.0.0",
+  "icon": "games/appicon.png",
+  "screenshot": "games/app-screenshot.png",
+  "size": "15 MB",
+  "publisher": "App Publisher",
+  "updated": "2025-09-09",
+  "download": "games/app.apk",
+  "description": "This is a short description of the app. You can explain its features, usage, and purpose here.",
+  "whatsNew": [
+    "Fixed minor bugs",
+    "Improved performance",
+    "Added new features"
+  ],
+  "similarGames": [
+    {
+      "name": "Similar App 1",
+      "version": "2.1"
+    },
+    {
+      "name": "Similar App 2",
+      "version": "1.5"
+    }
+  ]
+}
