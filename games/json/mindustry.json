@@ -1,0 +1,27 @@
+{
+  "name": "MINDUSTRY",
+  "version": "1.4.6",
+  "icon": "games/mindustry.png",
+  "screenshot": "games/screenshots/mindustry.jpg",
+  "size": "74 MB",
+  "publisher": "App Publisher",
+  "updated": "2025-09-09",
+  "download": "https://github.com/jasoomi11/ApkHub-games/releases/download/M/Mindustry.1.jar",
+  "description": "A factory and tower defense game where you build supply chains of conveyor belts to feed ammo into your turrets and produce materials.",
+  "whatsNew": [
+    "Fixed minor bugs",
+    "Improved performance",
+    "Added new features",
+    "added New Maps"
+  ],
+  "similarGames": [
+    {
+      "name": "Similar App 1",
+      "version": "2.1"
+    },
+    {
+      "name": "Similar App 2",
+      "version": "1.5"
+    }
+  ]
+}
