@@ -1,26 +1,20 @@
 {
-  "name": "App Name",
-  "version": "1.0.0",
-  "icon": "games/appicon.png",
-  "screenshot": "games/app-screenshot.png",
-  "size": "15 MB",
-  "publisher": "App Publisher",
-  "updated": "2025-09-09",
-  "download": "games/app.apk",
-  "description": "This is a short description of the app. You can explain its features, usage, and purpose here.",
+  "name": "Free Fire",
+  "version": "1.105.1",
+  "updated": "August 28, 2025",
+  "size": "700 MB",
+  "publisher": "Garena International",
+  "description": "Free Fire is a world-famous survival shooter game with fast-paced matches lasting 10 minutes.",
   "whatsNew": [
-    "Fixed minor bugs",
-    "Improved performance",
-    "Added new features"
+    "New Clash Squad season",
+    "Optimized graphics for smoother performance",
+    "New skins and seasonal rewards"
   ],
+  "icon": "https://play-lh.googleusercontent.com/0QdL3b_Jk3VQglKw7c48QTRcZFlS9hToNnYkV-azfA4mX4dqO8y6NQ=s256",
+  "screenshot": "https://play-lh.googleusercontent.com/cQpnpQ_wVfZ2ZdwA1ZAVT0a9N1NH1gLVu3ZlMtz6d93K1pGqwhw=w720-h310",
+  "download": "https://play.google.com/store/apps/details?id=com.dts.freefireth",
   "similarGames": [
-    {
-      "name": "Similar App 1",
-      "version": "2.1"
-    },
-    {
-      "name": "Similar App 2",
-      "version": "1.5"
-    }
+    { "name": "PUBG Mobile", "version": "3.3.0" },
+    { "name": "Standoff 2", "version": "0.24.2" }
   ]
 }

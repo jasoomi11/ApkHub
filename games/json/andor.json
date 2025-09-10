@@ -1,0 +1,27 @@
+{
+  "name": "Andor's Trail",
+  "version": "0.8.14",
+  "icon": "games/andor.png",
+  "screenshot": "games/screenshots/andor.jpg",
+  "size": "31 MB",
+  "publisher": "App Publisher",
+  "updated": "25-August",
+  "download": "games/app.apk",
+  "description": "Fantasy RPG with quests, battles, and open exploration.",
+  "whatsNew": [
+    "A familiar shadow",
+"The exploded star",
+"The swamp healer",
+"Restless in the grave"
+  ],
+  "similarGames": [
+    {
+      "name": "Similar App 1",
+      "version": "2.1"
+    },
+    {
+      "name": "Similar App 2",
+      "version": "1.5"
+    }
+  ]
+}

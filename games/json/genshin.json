@@ -1,0 +1,20 @@
+{
+  "name": "Genshin Impact",
+  "version": "4.0.2",
+  "updated": "August 20, 2025",
+  "size": "3.5 GB",
+  "publisher": "COGNOSPHERE PTE. LTD.",
+  "description": "Step into Teyvat, a vast fantasy world where you can explore freely, team up with friends, and master elemental combat.",
+  "whatsNew": [
+    "New Fontaine region expansion",
+    "New characters and weapons",
+    "Story quest updates"
+  ],
+  "icon": "https://play-lh.googleusercontent.com/YpbyU7sp-someicon=s256",
+  "screenshot": "https://play-lh.googleusercontent.com/exampleGenshinScreenshot=w720-h310",
+  "download": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact",
+  "similarGames": [
+    { "name": "Honkai Impact 3rd", "version": "6.3.0" },
+    { "name": "Tower of Fantasy", "version": "3.2.1" }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Call of Duty Mobile",
+  "version": "1.6.40",
+  "updated": "August 15, 2025",
+  "size": "2.5 GB",
+  "publisher": "Activision Publishing, Inc.",
+  "description": "COD Mobile offers console-quality PvP, battle royale, and zombie modes on your phone.",
+  "whatsNew": [
+    "New multiplayer maps",
+    "Zombie mode enhanced",
+    "Ranked season rewards"
+  ],
+  "icon": "games/cod.png",
+  "screenshot": "games/screenshots/cod.jpg",
+  "download": "https://play.google.com/store/apps/details?id=com.activision.callofduty.shooter",
+  "similarGames": [
+    { "name": "PUBG Mobile", "version": "3.3.0" },
+    { "name": "Free Fire", "version": "1.105.1" }
+  ]
+}
