@@ -10,8 +10,8 @@
     "Bug fixes for login and chat",
     "Enhanced graphics on supported devices"
   ],
-  "icon": "https://play-lh.googleusercontent.com/robloxIcon=s256",
-  "screenshot": "https://play-lh.googleusercontent.com/robloxScreenshot=w720-h310",
+  "icon": "games/roblox.png",
+  "screenshot": "games/screenshots/roblox.jpg",
   "download": "https://play.google.com/store/apps/details?id=com.roblox.client",
   "similarGames": [
     { "name": "Minecraft", "version": "1.21.2" },

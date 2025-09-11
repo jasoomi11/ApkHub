@@ -10,8 +10,8 @@
     "Optimized graphics for smoother performance",
     "New skins and seasonal rewards"
   ],
-  "icon": "https://play-lh.googleusercontent.com/0QdL3b_Jk3VQglKw7c48QTRcZFlS9hToNnYkV-azfA4mX4dqO8y6NQ=s256",
-  "screenshot": "https://play-lh.googleusercontent.com/cQpnpQ_wVfZ2ZdwA1ZAVT0a9N1NH1gLVu3ZlMtz6d93K1pGqwhw=w720-h310",
+  "icon": "games/freefire.png",
+  "screenshot": "games/screenshots/freefire.jpg",
   "download": "https://play.google.com/store/apps/details?id=com.dts.freefireth",
   "similarGames": [
     { "name": "PUBG Mobile", "version": "3.3.0" },

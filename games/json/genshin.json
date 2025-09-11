@@ -10,8 +10,8 @@
     "New characters and weapons",
     "Story quest updates"
   ],
-  "icon": "https://play-lh.googleusercontent.com/YpbyU7sp-someicon=s256",
-  "screenshot": "https://play-lh.googleusercontent.com/exampleGenshinScreenshot=w720-h310",
+  "icon": "games/genshin.png",
+  "screenshot": "games/screenshots/genshin.jpg",
   "download": "https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact",
   "similarGames": [
     { "name": "Honkai Impact 3rd", "version": "6.3.0" },
