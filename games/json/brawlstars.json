@@ -1,0 +1,20 @@
+{
+  "name": "Brawl Stars",
+  "version": "55.198",
+  "updated": "August 23, 2025",
+  "size": "350 MB",
+  "publisher": "Supercell",
+  "description": "Brawl Stars is a fast-paced multiplayer game with multiple game modes, unique heroes, and constant updates.",
+  "whatsNew": [
+    "New brawler released",
+    "New skins and seasonal events",
+    "Game balance updates"
+  ],
+  "icon": "games/brawlstar.png",
+  "screenshot": "games/screenshots/brawlstar.jpg",
+  "download": "https://play.google.com/store/apps/details?id=com.supercell.brawlstars",
+  "similarGames": [
+    { "name": "Clash Royale", "version": "4.600.1" },
+    { "name": "Boom Beach", "version": "46.87" }
+  ]
+}

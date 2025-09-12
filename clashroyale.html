@@ -1,0 +1,223 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>ZArchiver - APK Hub</title>  
+  <style>  
+    body {  
+      font-family: Arial, sans-serif;  
+      margin: 0;  
+      padding: 0;  
+      background-color: #000;  
+      color: #fff;  
+    }  
+    header {  
+      background: #111;  
+      padding: 10px 20px;  
+      display: flex;  
+      justify-content: space-between;  
+      align-items: center;  
+      color: #fff;  
+    }  
+    .logo {  
+      font-size: 20px;  
+      font-weight: bold;  
+    }  
+    .search-bar input {  
+      padding: 5px;  
+      border: none;  
+      border-radius: 5px;  
+    }  
+    .search-bar button {  
+      padding: 5px 10px;  
+      margin-left: 5px;  
+      border: none;  
+      border-radius: 5px;  
+      background: #ffcc00;  
+      cursor: pointer;  
+    }  
+    .hamburger {  
+      font-size: 24px;  
+      cursor: pointer;  
+    }  
+    .sidenav {  
+      height: 100%;  
+      width: 0;  
+      position: fixed;  
+      z-index: 1000;  
+      top: 0;  
+      left: 0;  
+      background-color: #111;  
+      overflow-x: hidden;  
+      transition: 0.5s;  
+      padding-top: 60px;  
+    }  
+    .sidenav a {  
+      padding: 8px 32px;  
+      text-decoration: none;  
+      font-size: 18px;  
+      color: #f1f1f1;  
+      display: block;  
+    }  
+    .sidenav a:hover {  
+      background: #575757;  
+    }  
+    .sidenav .closebtn {  
+      position: absolute;  
+      top: 10px;  
+      right: 20px;  
+      font-size: 36px;  
+    }  
+    .container {  
+      max-width: 1200px;  
+      margin: 20px auto;  
+      padding: 10px;  
+    }  
+    .card {  
+      background: #1a1a1a;  
+      border-radius: 10px;  
+      padding: 15px;  
+      margin-bottom: 20px;  
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);  
+      position: relative;  
+    }  
+    .card img {  
+      max-width: 100%;  
+      border-radius: 10px;  
+    }  
+    .flex {  
+      display: flex;  
+      align-items: center;  
+    }  
+    .flex img {  
+      width: 80px;  
+      margin-right: 15px;  
+    }  
+    .download-btn {  
+      display: inline-block;  
+      background: #ffcc00;  
+      padding: 10px 20px;  
+      border-radius: 5px;  
+      text-decoration: none;  
+      color: #000;  
+      font-weight: bold;  
+    }  
+    .grid {  
+      display: grid;  
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+      gap: 15px;  
+    }  
+    .update-badge {  
+      position: absolute;  
+      top: 10px;  
+      right: 15px;  
+      background: #ffcc00;  
+      color: #000;  
+      padding: 5px 10px;  
+      border-radius: 5px;  
+      font-size: 12px;  
+      font-weight: bold;  
+    }  
+  </style>  
+</head>  
+<body>  <header>  
+  <div class="logo">APK Hub</div>  
+  <div class="search-bar">  
+    <input type="text" placeholder="Search games..." id="searchInput">  
+    <button onclick="searchGames()">Search</button>  
+  </div>  
+  <div class="hamburger" onclick="openNav()">☰</div>  
+</header>  <!-- Sidebar -->  <div id="mySidenav" class="sidenav">  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+  <a href="index.html">Home</a>  
+  <a href="popular.html">Popular</a>  
+  <a href="az.html">A-Z</a>  
+  <a href="categories.html">Categories</a>  
+  <a href="#">About</a>  
+</div>  <div class="container">    <!-- Card 1: App Icon + Info -->    <div class="card" id="game-info">  
+    <div class="flex">  
+      <img id="game-icon" src="" alt="App Icon">  
+      <div>  
+        <h2 id="game-name"></h2>  
+        <p id="game-version"></p>  
+      </div>  
+    </div>  
+    <div style="margin-top:15px;">  
+      <img id="game-screenshot" src="" alt="App Screenshot">  
+    </div>  
+  </div>    <!-- Card 2: Download Info -->    <div class="card">  
+    <span class="update-badge" id="updateDate"></span>  
+    <h3 id="dl-name"></h3>  
+    <p id="dl-version"></p>  
+    <p id="dl-size"></p>  
+    <p id="dl-publisher"></p>  
+    <a id="dl-btn" href="#" class="download-btn"></a>  
+  </div>    <!-- Card 3: Description -->    <div class="card">  
+    <h3>Description</h3>  
+    <p id="game-description"></p>  
+  </div>    <!-- Card 4: What's New -->    <div class="card">  
+    <h3>What's New</h3>  
+    <p id="game-whatsnew"></p>  
+  </div>    <!-- Similar Apps -->    <h2>Similar Apps</h2>  
+  <div class="grid" id="similar-games"></div>  </div>  <script>  
+function openNav() {  
+  document.getElementById("mySidenav").style.width = "250px";  
+}  
+function closeNav() {  
+  document.getElementById("mySidenav").style.width = "0";  
+}  
+function searchGames() {  
+  let input = document.getElementById("searchInput").value.toLowerCase();  
+  alert("Search for: " + input); // Demo search  
+}  
+  
+// Loader for JSON  
+async function loadGameData() {  
+  try {  
+    const response = await fetch("games/json/clashroyale.json");  
+    const data = await response.json();  
+  
+    // Header  
+    document.title = data.name + " - APK Hub";  
+  
+    // Card 1  
+    document.getElementById("game-icon").src = data.icon;  
+    document.getElementById("game-icon").alt = data.name + " Icon";  
+    document.getElementById("game-name").textContent = data.name;  
+    document.getElementById("game-version").textContent = "Version: " + data.version;  
+    document.getElementById("game-screenshot").src = data.screenshot;  
+    document.getElementById("game-screenshot").alt = data.name + " Screenshot";  
+  
+    // Card 2  
+    document.getElementById("updateDate").textContent = "Updated: " + data.updated;  
+    document.getElementById("dl-name").textContent = data.name;  
+    document.getElementById("dl-version").textContent = "Version: " + data.version;  
+    document.getElementById("dl-size").textContent = "Size: " + data.size;  
+    document.getElementById("dl-publisher").textContent = "Publisher: " + data.publisher;  
+    document.getElementById("dl-btn").href = data.download;  
+    document.getElementById("dl-btn").textContent = "Download " + data.version;  
+  
+    // Card 3  
+    document.getElementById("game-description").textContent = data.description;  
+  
+    // Card 4  
+    document.getElementById("game-whatsnew").innerHTML = data.whatsNew.map(item => "• " + item).join("<br>");  
+  
+    // Similar Apps  
+    const grid = document.getElementById("similar-games");  
+    grid.innerHTML = "";  
+    data.similarGames.forEach(g => {  
+      let div = document.createElement("div");  
+      div.classList.add("card");  
+      div.innerHTML = `<h3>${g.name}</h3><p>Version ${g.version}</p>`;  
+      grid.appendChild(div);  
+    });  
+  } catch (error) {  
+    console.error("Error loading app data:", error);  
+  }  
+}  
+  
+loadGameData();  
+</script>  </body>  
+</html>  
+

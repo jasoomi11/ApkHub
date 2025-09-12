@@ -1,0 +1,20 @@
+{
+  "name": "Minecraft",
+  "version": "1.21.2",
+  "updated": "August 29, 2025",
+  "size": "680 MB",
+  "publisher": "Mojang",
+  "description": "Minecraft is a sandbox game about placing blocks and going on adventures. Build, explore, and survive in infinite worlds.",
+  "whatsNew": [
+    "New mob: Armored Armadillo",
+    "New biome variations",
+    "Bug fixes and stability improvements"
+  ],
+  "icon": "games/minecraft.png",
+  "screenshot": "games/screenshots/minecraft.jpg",
+  "download": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe",
+  "similarGames": [
+    { "name": "Roblox", "version": "2.642.785" },
+    { "name": "Terraria", "version": "1.4.4" }
+  ]
+}

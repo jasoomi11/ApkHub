@@ -1,0 +1,20 @@
+{
+  "name": "Clash Royale",
+  "version": "4.600.1",
+  "updated": "August 25, 2025",
+  "size": "250 MB",
+  "publisher": "Supercell",
+  "description": "Clash Royale is a real-time multiplayer game starring your favorite Clash characters and much more.",
+  "whatsNew": [
+    "New arena level unlocked",
+    "Balancing changes",
+    "Bug fixes and UI improvements"
+  ],
+  "icon": "https://play-lh.googleusercontent.com/clashroyaleIcon=s256",
+  "screenshot": "https://play-lh.googleusercontent.com/clashroyaleScreenshot=w720-h310",
+  "download": "https://play.google.com/store/apps/details?id=com.supercell.clashroyale",
+  "similarGames": [
+    { "name": "Clash of Clans", "version": "16.200.9" },
+    { "name": "Brawl Stars", "version": "55.198" }
+  ]
+}
